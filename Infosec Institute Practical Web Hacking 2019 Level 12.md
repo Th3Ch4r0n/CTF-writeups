@@ -1,4 +1,4 @@
-# Infosec Institute Practical Web Hacking CTF- Level 9 solution #
+# Infosec Institute Practical Web Hacking CTF- Level 12 solution #
 
 *Hello everyone!*
 
@@ -22,25 +22,24 @@ In the Proxy "Intercept" tab, ensure "Intercept is on".
 ![Image of Intruder tab](https://github.com/Th3Ch4r0n/CTF-writeups/blob/master/Level12_2.png)
 
 
-In your browser enter some arbitrary details in to the login page and submit the request. 
+In your browser enter username as **admin** (since it is already given in the problem page) and password as any arbitrary value in the login page and submit the request. 
 The captured request can be viewed in the Proxy "Intercept" tab.
 Right click on the request to bring up the context menu.Then click "Send to Intruder".
 
 image
 
 Go to the Intruder "Positions" tab.
-Clear the pre-set payload positions by using the "Clear" button on the right of the request editor.Add the "username" and "password" parameter values as positions by highlighting them and using the "Add" button.
-Change the attack to "Cluster bomb" using the "Attack type" drop down menu.  
+Select the attack type as "Sniper".
+Clear the pre-set payload positions by using the "Clear" button on the right of the request editor.Add the "password" parameter value as position by highlighting it and using the "Add" button. 
 
 image
+
 
 Go to the "Payloads" tab.In the "Payload sets" settings, ensure "Payload set" is "1" and "Payload type" is set to "Simple list".
-Since the username is already given as "admin", we shall enter that in "Payload options".
-
-Go to the "Payloads" tab.In the "Payload sets" settings, ensure "Payload set" is "2" and "Payload type" is set to "Simple list".
-Upload the wordlist using the "Add from List" option.
+Upload the wordlist you downloaded using the "Add from List" option.
 
 image
+
 
 Click the "Start attack" button.
 
