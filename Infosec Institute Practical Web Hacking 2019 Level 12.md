@@ -19,8 +19,8 @@ http://www.openwall.com/passwords/wordlists/password-2011.lst
 To brute force the login form, I used **Burpsuite**. You can configure it for your browser by following the instructions given [here.](https://support.portswigger.net/customer/portal/articles/1783066-configuring-firefox-to-work-with-burp)
 
 Fire up Burpsuite and in the Proxy **Intercept** tab, ensure "Intercept is on".
-![Image of Intruder tab](https://github.com/Th3Ch4r0n/CTF-writeups/blob/master/Level12_2.png)
 
+![Image of Intruder tab](https://github.com/Th3Ch4r0n/CTF-writeups/blob/master/Level12_2.png)
 
 In your browser enter username as **admin** (since it is already given in the problem page) and password as any arbitrary value in the login page and submit the request. 
 The captured request can be viewed in the Proxy **Intercept** tab.
@@ -50,7 +50,8 @@ In this case, we find a different response size for the string "princess" and we
 
 Check if your password is correct by entering it in the form.
 You should see something like this:
+
 ![Image of Solved](https://github.com/Th3Ch4r0n/CTF-writeups/blob/master/Level12_3.png)
 
-Hope you liked it. 
-Feedback and suggestions are welcome.
+*Hope you liked it. 
+Feedback and suggestions are welcome.*
