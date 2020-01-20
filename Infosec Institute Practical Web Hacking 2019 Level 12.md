@@ -23,30 +23,29 @@ Fire up Burpsuite and in the Proxy **Intercept** tab, ensure "Intercept is on".
 ![Image of Intruder tab](https://github.com/Th3Ch4r0n/CTF-writeups/blob/master/Level12_2.png)
 
 In your browser enter username as **admin** (since it is already given in the problem page) and password as any arbitrary value in the login page and submit the request. 
-The captured request can be viewed in the Proxy **Intercept** tab.
+The captured POST request can be viewed in the Proxy **Intercept** tab.
 Right click on the request to bring up the context menu and click **Send to Intruder**.
 
-image
+![Image of context menu](https://github.com/Th3Ch4r0n/CTF-writeups/blob/master/122.png)
 
 Go to the Intruder **Positions** tab.
 Select the attack type as **Sniper**.
-Clear the pre-set payload positions by using the **Clear** button on the right of the request editor.Add the "password" parameter value as position by highlighting it and using the **Add** button. 
+Clear the pre-set payload positions by using the **Clear** button on the right of the request editor.Add the "password" parameter value as position by selecting it and using the **Add** button. 
 
-image
+![Image of Positions tab](https://github.com/Th3Ch4r0n/CTF-writeups/blob/master/123.png)
 
 
 Go to the **Payloads** tab. In the **Payload sets** settings, ensure "Payload set" is "1" and "Payload type" is set to "Simple list".
-Upload the wordlist you downloaded using the **Add from List** option.
+Upload the wordlist you downloaded using the **Load** option.
 
-image
-
+![Image of Payloads tab](https://github.com/Th3Ch4r0n/CTF-writeups/blob/master/125.png) ![Image of the start attack](https://github.com/Th3Ch4r0n/CTF-writeups/blob/master/124.jpg)
 
 Click the **Start attack** button.
 Wait for it to run and see the results in the **Results** tab.
 If any of your attack is succcessful, you should see a difference in the **size of the response** sent by the site.
 In this case, we find a different response size for the string "princess" and we can further verify by rendering the response by clicking on the **render** option. Thus the password is **princess**.
 
-
+![Image of results](https://github.com/Th3Ch4r0n/CTF-writeups/blob/master/126.png)
 
 Check if your password is correct by entering it in the form.
 You should see something like this:
