@@ -14,7 +14,7 @@ It says that we have been **blacklisted** and that knowing what websites typical
 It was a bit confusing at first and so I decided to take the hint. The hint said that we needed to look at the **cookies**, **IP addresses** and **user-agents** to remove the ban.
 So I started with the cookies first.
 
-We would be using the [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg?hl=en) extention in Chrome for this purpose. Fire up the extention by clicking at the cookie shaped icon on the top right and see which cookies are set up by the site.
+We would be using the [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg?hl=en) extension in Chrome for this purpose. Fire up the extention by clicking at the cookie shaped icon on the top right and see which cookies are set up by the site.
 
 ![Image of editthiscookie](https://github.com/Th3Ch4r0n/CTF-writeups/blob/master/112.png)
 
